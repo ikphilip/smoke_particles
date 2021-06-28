@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="smoke.js"></script>
+  </head>
+  <body>
+    <svg id="canvas" width="800" height="600">
+      <g id="smoke" data-id="smoke" style="transform: translate(400px, 300px);">
+        <circle stroke="#000" stroke-width="3.5" fill="#fff" r="10"></circle>
+      </g>
+    </svg>
+    <script>
+      const point = document.getElementById("smoke")
+      point.smoke = new Smoke()
+      point.smoke.startAnimation()
+    </script>
+  </body>
+</html>
